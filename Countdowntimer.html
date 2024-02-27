@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Limited Time Promo</title>
+        <link rel="icon" type="image/x-icon" href="Alter_inc_Logo.png">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body style="background-color:lightslategray; ">
+        <h1 style="color:black; margin:20px;font-family:'Calibri', 'Trebuchet MS', sans-serif;"><b><u>Promo for Alienware PC funded By Alter Inc</u> </b> </h1>
+        <img src="Alienware with name.jpg" alt="Product" height="300px" style="border: 3px solid beige; border-radius: 10px; margin: 15px;">
+        <div style="clear: inherit; margin: 15px; font-family: Arial,sans-serif;">
+            <h3 style="color: aquamarine;" >Alter is hosting a Promo for the Alienware PC.
+                 Hurry now and Grab it before<br> the promo Ends by March 7th 12 Noon (WAT).<br> Stocks are limited as well
+                only 250 are on the promo at the bargain of $1000. </h3>
+            <h4><em>Contact us at</em> "Alter.Inc@Yahooboys.com" <br>
+                <em>Dial</em> "08134215588" for more information</h4>
+        </div>
+        <img src="Alienware Colours.webp" alt="Aviable Colours" height="100px"style="border: 3px solid orange; border-radius: 10px; margin: 5px">
+        <img src="Baldur's Gate on the Alienware.jpg" alt="Game running on PC" height="100px"style="border: 3px solid orange; border-radius: 10px; margin: 5px">
+        <img src="Alienware White BG Other side.avif" alt="Product from an angle" height="100px"style="border: 3px solid orange; border-radius: 10px; margin: 5px">
+        <h2 style="color: rgb(77, 20, 220); margin: 20px;"><br><u> Promo Begins in:</u></h2>
+        <p id="Timer" style="color: magenta; border: 5px none blue; background-color: plum; font-size: 40px; max-width: 620px; margin: 10px;"></p>
+        <script>
+            var countDownDate = new Date("March 5, 2024 00:16:00").getTime();
+            var x = setInterval(function() {
+              var now = new Date().getTime();
+              var TimeLeft = countDownDate - now;
+              // Time calculations for days, hours, minutes and seconds
+              var days = Math.floor(TimeLeft / (1000 * 60 * 60 * 24));
+              var hours = Math.floor((TimeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+              var minutes = Math.floor((TimeLeft % (1000 * 60 * 60)) / (1000 * 60));
+              var seconds = Math.floor((TimeLeft % (1000 * 60)) / 1000);
+              // Output the result
+              document.getElementById("Timer").innerHTML = days + "Days " + hours + "Hours "
+              + minutes + "Minutes " + seconds + "Seconds ";
+              //
+              if (TimeLeft < 0) {
+                clearInterval(x);
+                document.getElementById("Timer").innerHTML = "The Giveaway Has  Already Begun";
+              }
+            }, 1000);
+        </script>
+    </body>
+</html>
